@@ -1,7 +1,8 @@
 \documentclass{article}
 
 \usepackage{amsmath}
-\usepackage{amssymb}
+
+\usepackage{amssymb} 
 
 \begin{document}
 
@@ -9,46 +10,65 @@
 
 Sets are denoted with capital letters, e.g. A, B, C. The elements of a set are listed inside curly brackets:
 
-\begin{align}
-A = \{1, 2, 3\} \\
-B = \{a, b, c\}
-\end{align}
+\begin{align*}  
+A &= \{1, 2, 3\} \\
+B &= \{a, b, c\}  
+\end{align*}
 
-The union of two sets A and B is denoted $A \cup B$ and contains all elements of both sets. The intersection $A \cap B$ contains elements common to both.
+The union of two sets A and B is denoted $A \\cup B$ and contains all elements of both sets. The intersection $A \\cap B$ contains elements common to both.
 
-\begin{align}
-A \cup B & = \{1, 2, 3, a, b, c\} \\
-A \cap B & = \emptyset \bigcup \{\}
-\end{align}
+\begin{align*}
+A \cup B &= \{1, 2, 3, a, b, c\} \\ 
+A \cap B &= \emptyset
+\end{align*}
 
 Sets can also be described using set builder notation:
 
-\begin{align}
-C & = \{x | x \in \mathbb{N}, 0 \leq x \leq 5\} \\
-& = \{x |\textrm{$x$ is in asdfiuh is asfe}, 0 \leq x \leq 5\}
-\end{align}
+\begin{align*}
+C &= \{x \mid x \in \mathbb{N}, 0 \leq x \leq 5\} \\
+&= \{x \mid \textrm{$x$ is natural}, 0 \leq x \leq 5\}  
+\end{align*}
 
-This covers the basics of set notation and operations in Latex math mode. Additional set theory topics like power sets, Cartesian products, etc. could be added.
+This covers the basics of set notation and operations in LaTeX math mode. Additional set theory topics like power sets, Cartesian products, etc. could be added.
 
-\begin{align}
-bunnies & = E(n_{g+1}’|n_i'';\,1\le i\le g) \\
-& = \{\textrm{Who knows, it's all pipes!}\}
-\end{align}
+\begin{align*}
+\textrm{bunnies} &= E(n\_{g+1}' \mid n\_i''; 1\le i\le g) \\
+               &= \{\textrm{Who knows, it's all pipes!}\}  
+\end{align*}
 
 COM1031 WEEK 2
 
-\begin{align}
-\{a, b\} & = \{b, a\} \textrm{   Still talking about sets.} \\
-\end{align}
+\begin{align*} 
+\{a, b\} &= \{b, a\} \qquad \textrm{ Still talking about sets.}
+\end{align*}
 
-About the size of cartesian products:
+About the size of Cartesian products: 
 
-\begin{align}
+\begin{align*}
 \textrm{ayy} \\
-|\mathbf{A}| * |\mathbf{B}| &= |\mathbf{A} \times \mathbf{B}| \\
-\mathbf{R}^{-1} & = \{(b, a) \in \mathbf{B} \times \mathbf{A} \vert (a, b) \in \mathbf{R}\}
-\end{align}
+\lvert \mathbf{A} \rvert \cdot \lvert \mathbf{B} \rvert &= \lvert \mathbf{A} \times \mathbf{B} \rvert \\
+\mathbf{R}^{-1} &= \{(b, a) \in \mathbf{B} \times \mathbf{A} \mid (a, b) \in \mathbf{R}\}
+\end{align*}
 
+Let S be the set of students.\\
+Let B be the set of bars in Guildford.\\  
+V(x,y) means x has visited y
 
+\begin{align*}  
+\exists x \in \mathbf{S}. \forall y \in \mathbf{B}.V(x,y)
+\end{align*}
+
+Let $\mathbf{S}$ be the set of students. \\
+Let $\mathbf{B}$ be the set of bars in Guildford. \\
+T(x) means x studies hard. \\
+D(x) means x does well in exams.
+
+\begin{align*}
+(\forall x \in \mathbf{S}.T(x)) \implies (\forall s \in \mathbf{S}.D(s))  
+\end{align*}
+
+\begin{align*}
+\exists a \in \mathbf{A}.D(a).G(a) \land \exists b \in \mathbf{A}.D(b).G(b)
+\end{align*}
 
 \end{document}
