@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696354522 "/Users/jim/dev/math/text.tex" "text.pdf" "text" 1696354522 0
-  "/Users/jim/dev/math/text.tex" 1696354521 1094 984b8ac6b9707f709c0fc783b02a9a96 ""
+["pdflatex"] 1699123225 "/Users/jimlam/dev/math/text.tex" "text.pdf" "text" 1699123225 0
+  "/Users/jimlam/dev/math/text.tex" 1699123225 1734 4b1944148b163f2a8e313120cb84da21 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -31,13 +31,13 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty" 1686341992 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1686341992 20144 fbcf51733730d8f1a62143512ff5b1fe ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo" 1686341992 8448 74078c4a887f2cdcd57c3ec111622740 ""
-  "/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1681935207 29940 9473d58112bc8a88f5505b823a053dde ""
-  "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1681165822 40967 d940221f8762fd5848760382d97d1226 ""
-  "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696101120 4681916 e036ee33f3dbf5f8fc9e7fd881d62690 ""
-  "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696101195 8183250 5dfd432cefbe1031f27cbc25318bf521 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1698169870 29988 bb6a6635dd6c1ccb32cf27163b4e39bb ""
+  "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1697057529 41009 84b61f42d16d06bedb915f57aa2374cf ""
+  "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1699122546 4713444 afc53393b8fb987355921390cce90e5b ""
+  "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1699122593 8213375 79063c1c60f7d3c019719ff0448f28f0 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "text.aux" 1696354522 132 73199456ec67f2469837d798e520c238 "pdflatex"
-  "text.tex" 1696354521 1094 984b8ac6b9707f709c0fc783b02a9a96 ""
+  "text.aux" 1699123225 235 339e71c7a8add5234e2a0e6620de50eb "pdflatex"
+  "text.tex" 1699123225 1734 4b1944148b163f2a8e313120cb84da21 ""
   (generated)
   "text.aux"
   "text.log"
