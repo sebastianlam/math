@@ -35,7 +35,7 @@ radius=1.5cm, rotate=-50]} \def\bounding{(-5,-3) rectangle (5,4)}
     \end{tikzpicture}
 }
 \begin{document}
-\title{Notes for COM1026 in semester test 1}
+\title{Notes for COM1026 in semester test 1, condensed from lecture slides}
 \maketitle
 \tableofcontents
 \section{Set Theory}
@@ -530,11 +530,106 @@ The inverse of a function $\mathbf{f} : A \rightarrow B$ is the function $\mathb
 
 \section{Language and regular expressions}
 
-\subsection{Alphabets and strings}
+\subsection{Alphabet}
 
 We specify an Alphabet using the symbol $\Sigma$.
 
+Examples:
+
+\begin{align*}
+    \Sigma_1 & = \{a, b, c, d, e, f\}                                                                                             \\
+    \Sigma_2 & = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}                                                                                 \\
+    \Sigma_3 & = \{S \mid S \subseteq \Sigma_1\}                     & (\text{The power set of } \Sigma_1, \#\Sigma_3 = 2^6 = 64) \\
+    \Sigma_4 & = \{(x, y) \mid x \in \Sigma_1 \land y \in \Sigma_2\} & \text{Ordered pairs of characters work as well}
+\end{align*}
+
+An alphabet must be a set that contain finite elements,
+hence sets like $\mathbb{N} = \{1,2,3,4,5,6,7,8,9,...\}$ cannot be the alphabet of a language.
+
+\subsection{Strings}
+
+A string is a finite sequence of characters from an alphabet.
+
+A string of length n is denoted as the n-tuple $w = a_1a_2a_3...a_n$, written without punctuation.
+
+The set of all finite strings are denoted as $\Sigma^*$, and we can say that string s is in $\Sigma^*$ if $s \in \Sigma^*$.
+
+\subsubsection{Empty string}
+
+Might be jarring to you, Jim, but you have the option to denote an empty string as $\epsilon$. Will be useful later on.
+
+\subsubsection{String Operations}
+
+\begin{itemize}
+    \item Concatenation: $w_1w_2$ is the concatenation of strings $w_1$ and $w_2$.
+    \item Length: $|w|$ is the length of string w. The length of concatenated strings are simply the sum of the lengths of the individual strings.
+\end{itemize}
+
+\subsection{Language}
+
+A language is a set of strings.
+
+\subsection{Regular expressions}
+
+A regular expression is a string that denotes a language. Here are the rules:
+
+\begin{itemize}
+    \item lwt$\Sigma$ be an alphabet.
+    \item $a$ denotes the language $\{a\}$, where $a \in \Sigma$, which is on its own a regular expression.
+    \item $\epsilon$ and $\emptyset$ denote the languages $\{\epsilon\}$ and $\emptyset$, which are also regular expressions.
+    \item Given r and s as regular expressions, the following are also regular expressions:
+          \begin{itemize}
+              \item $rs$, $r|s$, $r^*$
+          \end{itemize}
+\end{itemize}
+
+\subsubsection{Examples}
+
+The following are rules for matching strings to RegEx, let s be a string and r be a regular expression:
+
+\begin{itemize}
+    \item $s$ matches $a$ when $s = a$
+    \item $\epsilon$ matches $\epsilon$ when $s = \epsilon$
+    \item $\emptyset$ matches nothing.
+    \item $r|s$ matches $r$ or $s$.
+    \item $rs$ matches $r$ followed by $s$.
+    \item $r^*$ matches if $s = \epsilon$ or $s = s_1s_2...s_n$, where $s_i$ matches $r$ for all $i$.
+\end{itemize}
+
+\subsubsection{Regular languages}
+
+A language is regular if it is denoted by a regular expression.
+
+\begin{align*}
+    \text{For alphabet $\Sigma$ and regular expressions r:} \\
+    L(r) = \{s \in \Sigma^* \mid s \textbf{ matches } r\}
+\end{align*}
+
 \section{Finite automata}
+
+\subsection{Deterministic finite automata}
+
+\begin{align*}
+    \text{States: } Q                 & = \{q_0, q_1, q_2, q_3\}        \\
+    \text{Symbol: } \Sigma            & = \{0, 1\}                      \\
+    \text{Transition Function} \delta & : Q \times \Sigma \rightarrow Q \\
+    \text{Start: }                    & = q_0 \in Q                     \\
+    \text{Accepting: }                & = \{q_2, q_3\} \subseteq Q      \\
+\end{align*}
+
+\begin{tikzpicture}
+    \node[state, initial] (q0) {$q_0$};
+    \node[state, right of = q0] (q1) {$q_1$};
+    \node[state, accepting, below left of = q1] (q2) {$q_2$};
+    \node[state, accepting, right of = q2] (q3) {$q_3$};
+    \draw (q0) edge[above] node{0} (q1)
+    (q1) edge[above left] node{0} (q2)
+    (q2) edge[below left] node{1} (q0)
+    (q2) edge[bend right, below] node{0} (q3)
+    (q3) edge[loop right] node{1} (q3);
+\end{tikzpicture}
+
+\subsection{Non-deterministic finite automata}
 
 \subsection{Examples}
 
