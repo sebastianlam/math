@@ -629,8 +629,41 @@ A language is regular if it is denoted by a regular expression.
     (q3) edge[loop right] node{1} (q3);
 \end{tikzpicture}
 
+\subsubsection{Criteria for a DFA}
+
+\begin{itemize}
+    \item DFAs have exactly one start state.
+    \item May have one or more accepting states.
+    \item For each state, there must be at most one outgoing transition $\textbf{for each symbol in the alphabet.}$
+\end{itemize}
+
+\subsubsection{Language definition with DFAs}
+
+For automaton $M$, the language $L(M)$ consists of all strings $s$ over its alphabet of input symbols statisfying:
+
+\begin{align}
+    & q_0 \xrightarrow{\text{s}} * q \\
+    & s = q_0,q_1,q_2,...,q_n \text{ for the states: } q_0, q_1, q_2, ..., q_n
+\end{align}
+
+If (1) is the case, $s$ is accepted by $M$.
+More formally:
+
+\begin{align*}
+    L(M) = \{u \mid u \textbf{ is accepted by } M\}
+\end{align*}
+
 \subsection{Non-deterministic finite automata}
 
+\subsubsection{What is the difference?}
+
+\begin{itemize}
+    \item NDFAs can have multiple outgoing transitions for a given symbol.
+    \item NDFAs can have $\epsilon$-transitions, which are transitions that can be taken without consuming an input symbol.
+    \item NDFAs can have multiple start states.
+    \item NDFAs can have no accepting states.
+    \item NDFAs can have multiple accepting states.
+\end{itemize}
 \subsection{Examples}
 
 Referenced from \url{https://www3.nd.edu/~kogge/courses/cse30151-fa17/Public/other/tikz_tutorial.pdf}.
