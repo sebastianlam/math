@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1699409816 "/Users/jim/dev/math/text.tex" "text.pdf" "text" 1699409820 0
-  "/Users/jim/dev/math/text.tex" 1699409815 29215 bbc6bd5539ecb077b23524256d37b9c8 ""
+["pdflatex"] 1699409889 "/Users/jim/dev/math/text.tex" "text.pdf" "text" 1699409892 0
+  "/Users/jim/dev/math/text.tex" 1699409889 29216 1306a6708f257608eccd225fe3e44492 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -167,10 +167,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696101120 4681916 e036ee33f3dbf5f8fc9e7fd881d62690 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696101195 8183250 5dfd432cefbe1031f27cbc25318bf521 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "text.aux" 1699409819 7147 cf62266c4341a62f263db7e98cbe66cf "pdflatex"
-  "text.out" 1699409819 7510 d1d20ce3882eef65fb32919b1072e119 "pdflatex"
-  "text.tex" 1699409815 29215 bbc6bd5539ecb077b23524256d37b9c8 ""
-  "text.toc" 1699409819 4460 7177401136fb3e982054969f4ddb349d "pdflatex"
+  "text.aux" 1699409892 7147 cf62266c4341a62f263db7e98cbe66cf "pdflatex"
+  "text.out" 1699409892 7510 d1d20ce3882eef65fb32919b1072e119 "pdflatex"
+  "text.tex" 1699409889 29216 1306a6708f257608eccd225fe3e44492 ""
+  "text.toc" 1699409892 4460 7177401136fb3e982054969f4ddb349d "pdflatex"
   (generated)
   "text.aux"
   "text.log"
