@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{tikz}
+\usepackage{outlines}
 \usetikzlibrary{automata, positioning, arrows}
 \tikzset{
 ->, % makes the edges directed
@@ -35,7 +36,12 @@ radius=1.5cm, rotate=-50]} \def\bounding{(-5,-3) rectangle (5,4)}
     \end{tikzpicture}
 }
 \begin{document}
-\title{Notes for COM1026 in semester test 1, condensed from lecture slides}
+\title{%
+    COM1026 EXAM NOTES, CONDENSED \\
+    \large 01 IFH 02 - Ada \\
+    Lovelace Lab 129 \\
+    Time: 15:30 - 17:30 \\
+    }
 \maketitle
 \tableofcontents
 \section{Set Theory}
@@ -347,7 +353,7 @@ Should you want to confuse yourself even further, the infix notation is a good o
 
 \begin{align*}
      & \text{Let the relation "likes" be defined as: } \mathbf{L} = \{(x, y) | x \text{ likes } y\} \\
-     & \text{You can denote (x, y) as a subset of the likes by writing: x$\mathbf{L}$y}             \\
+     & \text{You can denote (x, y) as a member of the likes by writing: x$\mathbf{L}$y}             \\
 \end{align*}
 
 \subsection{Representing relations}
@@ -811,22 +817,216 @@ Socrates is a human.
 Therefore, Socrates is mortal.
 (Example of a Aristotelian syllogism)
 
+\section{Predicate logic}
+
+A predicate is a function that returns a boolean value.
+
+\begin{align*}
+    \text{Let } P(x) & = \text{"x is a prime number"} \\
+    \text{Let } Q(x) & = \text{"x is a perfect square"}
+\end{align*}
+
+\subsection{Quantifiers}
+
+Quantifiers are used to express the extent to which a predicate is true.
+
+\begin{align*}
+    \forall x \in \mathbb{N} : P(x) & = \text{"For all x in the set of natural numbers, P(x) is true"} \\
+    \exists x \in \mathbb{N} : P(x) & = \text{"There exists an x in the set of natural numbers such that P(x) is true"}
+\end{align*}
+
+\subsection{Negation of quantifiers}
+
+\begin{align*}
+    \neg \forall x \in \mathbb{N} : P(x) & = \text{"There exists an x in the set of natural numbers such that P(x) is false"} \\
+    \neg \exists x \in \mathbb{N} : P(x) & = \text{"For all x in the set of natural numbers, P(x) is false"}
+\end{align*}
+
+\subsection{Quantifiers and truth tables}
+
+\begin{align*}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        P(x) & Q(x) & $\forall x \in \mathbb{N} : P(x)$ & $\forall x \in \mathbb{N} : Q(x)$ \\
+        \hline
+        T    & T    & T                                  & T                                \\
+        \hline
+        T    & F    & F                                  & F                                \\
+        \hline
+        F    & T    & F                                  & T                                \\
+        \hline
+        F    & F    & F                                  & F                                \\
+        \hline
+    \end{tabular}
+\end{align*}
+
+\begin{align*}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        P(x) & Q(x) & $\exists x \in \mathbb{N} : P(x)$ & $\exists x \in \mathbb{N} : Q(x)$ \\
+        \hline
+        T    & T    & T                                  & T                                \\
+        \hline
+        T    & F    & T                                  & F                                \\
+        \hline
+        F    & T    & T                                  & T                                \\
+        \hline
+        F    & F    & F                                  & F                                \\
+        \hline
+    \end{tabular}
+\end{align*}
+
+\subsection{Quantifiers and negation}
+
+\begin{align*}
+    \neg \forall x \in \mathbb{N} : P(x) & = \exists x \in \mathbb{N} : \neg P(x) \\
+    \neg \exists x \in \mathbb{N} : P(x) & = \forall x \in \mathbb{N} : \neg P(x)
+\end{align*}
+
+
 
 
 \section{Graphs and trees}
 
+In this section we will be looking at graphs and trees.
+
+\subsection{Graphs}
+
+A graph is a set of vertices and edges (V, E), wjhere:
+
+\begin{itemize}
+    \item V is a set of vertices, i.e.: $V = \{v_1, v_2, v_3, ..., v_n\}$
+    \item E is a set of edges, i.e.: $E = \{\{v_1, v_2\}, \{v_2, v_3\}, \{v_3, v_4\}, ..., \{v_n, v_1\}\}$
+\end{itemize}
+
+NOTICE THAT THE SET OF edges E IS A SET OF SETS, meaning that an edge is an unordered pair of vertices.
+
+Also, there are:
+
+\begin{outline}
+    \1 Simple graphs: graphs with no loops or multiple edges
+    \1 Multigraphs: graphs with multiple edges between the same two vertices
+    \1 Pseudographs: graphs with loops
+\end{outline}
+
+\subsection{Directed graphs}
+
+A directed graph is a graph where the edges are directed, i.e.: $(v_1, v_2) \neq (v_2, v_1)$.
+
+\subsubsection{Degree of undirected graphs}
+
+THe degree of a vertex in an undirected graph is the number of edges incident to it, i.e.: $deg(v) = \#\{e \in E \mid v \in e\}$.
+
+\subsubsection{Degree of directed graphs}
+
+The degree of a vertex in a directed graph is the number of edges incident to it, i.e.:
+\begin{outline}
+    \1 edges that start with v: $deg^+(v) = \#\{e \in E \mid v $ is the first item in the ordered pair $ e\}$.
+    \1 edges that end with v: $deg^-(v) = \#\{e \in E \mid v $ is the second item in the ordered pair $ e\}$.
+\end{outline}
+
+note that the cardinality of the set of edges incident to a vertex is the sum of the in-degree and out-degree of the vertex, i.e.:
+
+$ \sum_{v \in V} deg^+(v) = \sum_{v \in V} deg^-(v) = \#\{e \in E\} $.
+
+\subsection{isomorphisms}
+
+Two graphs G and H are isomorphic if there exists a bijection $f : V(G) \rightarrow V(H)$ such that:
+
+\begin{align*}
+    \forall u, v \in V(G) : \{u, v\} \in E(G) \iff \{f(u), f(v)\} \in E(H)
+\end{align*}
+
+Use your fantastic intuition and you will be fine Jim.
+
+\subsection{Paths and Circuits}
+
+A path is a sequence of vertices $v_1, v_2, ..., v_n$ such that $\{v_i, v_{i+1}\} \in E$ for all $i = 1, 2, ..., n-1$.
+
+A circuit is a path that starts and ends at the same vertex.
+
+A path or circuit is simple if all vertices are distinct (does not use the same edge twice).
+
+\subsection{connectedness}
+
+An undirected graph is connected if there is a path between every pair of vertices.
+
+A directed graph is strongly connected if there is a path between every pair of vertices.
+
+A directed graph is weakly connected if the underlying undirected graph is connected.
+
+There might be strongly connected components in a directed graph, where a strongly connected component is a maximal subset of vertices such that every pair of vertices is strongly connected.
+
+\subsection{Eulerian paths and circuits}
+
+Eulerians concern edges, not vertices.
+
+An Eulerian path is a simple path that uses every edge (exactly once, as per previsous definitions of "simple").
+
+An Eulerian circuit is a simple circuit that uses every edge (exactly once, as per previsous definitions of "simple").
+
+Theorem: A connected undirected graph has an Eulerian circuit if and only if every vertex has even degree.
+
+Theorem: A connected undirected graph has an Eulerian path but not an Eulerian circuit if and only if exactly two vertices have odd degree.
+
+SAMPLE GRAPH FOR ILLUSTRATION:
+
 \begin{tikzpicture}[node distance={25mm}, thick, main/.style = {draw, circle}]
+    % draw a graph with an Eulerian path but not an Eulerian circuit
     \node[main] (1) {$x_1$};
-    \node[main] (2) [above right of=1] {$x_2$};
-    \node[main] (3) [below right of=1] {$x_3$};
-    \node[main] (4) [above right of=3] {$x_4$};
-    \draw[->] (1) -- (2);
-    \draw[->] (1) -- (3);
-    \draw (2) -- (4);
-    \draw (3) -- (4);
+    \node[main] (2) [right of=1] {$x_2$};
+    \node[main] (3) [right of=2] {$x_3$};
+    \node[main] (4) [below of=1] {$x_4$};
+    \node[main] (5) [right of=4] {$x_5$};
+    \node[main] (6) [right of=5] {$x_6$};
+
+    \draw [-] (1) -- (2);
+    \draw [-] (2) -- (3);
+    \draw [-] (3) -- (4);
+    \draw [-] (4) -- (5);
+    \draw [-] (5) -- (6);
+    \draw [-] (6) -- (1);
+    \draw [-] (1) -- (4);
 \end{tikzpicture}
 
+\subsection{Hamiltonian paths and circuits}
+
+Hamiltonians concern vertices, not edges.
+
+A Hamiltonian path is a simple path that uses every vertex (exactly once, as per previsous definitions of "simple").
+
+A Hamiltonian circuit is a simple circuit that uses every vertex (exactly once, as per previsous definitions of "simple").
+
+
+Unlike Eulerians, there is no easy way to determine if a graph has a Hamiltonian path or circuit.
+
 Ayyy lmao.
+
+\subsection{Trees}
+
+A tree is a connected graph with no circuits.
+
+A rooted tree is a tree with a designated root vertex.
+
+The following properties are equivalent for a graph G:
+
+\begin{outline}
+    \1 G is a tree.
+    \1 There exists exactly one path between any pair of vertices in G.
+    \1 G is connected and has exactly n - 1 edges.
+    \1 G is connected and either n = 1 and G has no edges,or G <= 2 and removing any edge in G makes the graph unconnected.
+    \1 G has no cycles, and adding an edge between any pair of non-adjacent edges v, v creates a cycle containing v and v.
+
+\end{outline}
+\subsection{types of traversal}
+
+There are preorder, inorder, and postorder traversals.
+
+\begin{outline}
+    \1 Preorder: visit the root, then recursively visit the left and right subtrees.
+    \1 Inorder: recursively visit the left subtree, then visit the root, then recursively visit the right subtree.
+    \1 Postorder: recursively visit the left and right subtrees, then visit the root.
+\end{outline}
 
 \begin{tikzpicture}[node distance={25mm}, thick, main/.style = {draw, circle}]
     \node[main] (1) {$x_1$};
@@ -884,8 +1084,35 @@ Now onto the 3 $\times$ 4 example.
 
 \section{Proofs}
 
-\subsection{introduction}
+\begin{itemize}
+    \item Definitions are used to create new concepts in terms of existing ones
+    \item Axioms are statements that are self evident or assumed to be true
+    \item Theorems, Lemmas, Propositions are statements that are shown to be true (via a proof)
+    \item Corollary is a property that follows from a Theorem, Lemma or proposition, e.g., as an instance
+    \item A proof is a sequence of statements that form an argument using definitions axioms and proof rules
+    \item Fanccy ending like "quod erat demonstrandum" is used to indicate the end of a proof.
+\end{itemize}
 
+
+\subsection{Proof methods}
+
+There are four proof methods that we will be using:
+
+\begin{outline}
+    \1 Direct proof: Assume the hypothesis and show that the conclusion follows
+    \1 Indirect proof (contrapositive, contradiction)
+    \2 Contrapositive: Assume the negation of the conclusion and show that the negation of the hypothesis follows
+    \2 Contradiction: Assume the hypothesis and the negation of the conclusion and show that a contradiction follows
+    % try using latex sub list heirachy below for contrapositive and contradiction
+    \1 Existence proofs
+    \2 Demonstrate an example that satisfies the hypothesis
+    \1 Proof by induction
+    \2 Show that the hypothesis holds for the base case
+    \2 Show that if the hypothesis holds for an arbitrary case assumed to be true, then it holds for the next case (k + 1)
+
+\end{outline}
+
+\subsection{outline}
 
 Proofs are hard to write, but easy to read.
 Proof that the sum of an even number and odd number is odd:
@@ -900,6 +1127,188 @@ Proof that the sum of an even number and odd number is odd:
                   & \therefore x + y \text{ is odd}
 \end{align*}
 
+\section{Combinatorics and probability}
 
+\subsection{Combinatorics}
 
+\subsubsection{Product rule}
+
+The product rule states that the number of ways to perform a sequence of k tasks, where the first task can be performed in n1 ways, the second task can be performed in n2 ways, and so on, is n1 $\times$ n2 $\times$ ... $\times$ nk.
+
+EXTENDED PRODUCT RULE: The number of ways to perform a sequence of k tasks, where the first task can be performed in n1 ways, the second task can be performed in n2 ways, and so on, and the kth task can be performed in nk ways, is n1 $\times$ n2 $\times$ ... $\times$ nk.
+
+\begin{align*}
+    \text{Let } n_1, n_2, n_3, ..., n_k \in \mathbb{N} \\
+    \text{The number of ways to perform a sequence of k tasks is:} \\
+    n_1 \times n_2 \times n_3 \times ... \times n_k
+\end{align*}
+
+\subsubsection{Sum rule}
+
+The sum rule states that the number of ways to perform a task is the sum of the number of ways to perform it in each of several different cases.
+
+\begin{align*}
+    \text{Let } n_1, n_2, n_3, ..., n_k \in \mathbb{N} \\
+    \text{The number of ways to perform a task is:} \\
+    n_1 + n_2 + n_3 + ... + n_k
+\end{align*}
+
+\subsubsection{Permutations}
+
+A permutation is an ordered arrangement of objects.
+
+\begin{align*}
+    \text{Let } n \in \mathbb{N} \text{ and } k \in \mathbb{N} \text{ where } k \leq n \\
+    \text{The number of permutations of n objects taken k at a time is:}                 \\
+    P(n, k) = \frac{n!}{(n - k)!}
+\end{align*}
+
+\subsubsection{Combinations}
+
+A combination is an unordered selection of objects.
+
+\begin{align*}
+    \text{Let } n \in \mathbb{N} \text{ and } k \in \mathbb{N} \text{ where } k \leq n \\
+    \text{The number of combinations of n objects taken k at a time is:}                 \\
+    C(n, k) = \frac{n!}{k!(n - k)!}
+\end{align*}
+
+The symbol $\binom{n}{k}$ is used to denote the number of combinations of n objects taken k at a time.
+
+Sometimes $r$ is used instead of $k$.
+
+\subsection{Probability}
+
+\subsubsection{Sample space}
+
+The sample space is the set of all possible outcomes of an experiment.
+
+\subsubsection{Event}
+
+An event is a subset of the sample space.
+
+\subsubsection{Probability}
+
+The probability of an event is the number of outcomes in the event divided by the number of outcomes in the sample space.
+
+\begin{align*}
+    \text{Let } S \text{ be the sample space and } E \subseteq S \text{ be an event} \\
+    P(E) = \frac{\#E}{\#S}
+\end{align*}
+
+\subsubsection{Probability axioms}
+
+\begin{outline}
+    \1 $0 \leq P(E) \leq 1$
+    \1 $P(S) = 1$
+    \1 If $E_1, E_2, E_3, ...$ are disjoint events, then $P(E_1 \cup E_2 \cup E_3 \cup ...) = P(E_1) + P(E_2) + P(E_3) + ...$
+\end{outline}
+
+\subsubsection{Probability rules}
+
+\begin{outline}
+    \1 $P(E^c) = 1 - P(E)$
+    \1 $P(E \cup F) = P(E) + P(F) - P(E \cap F)$
+    \1 $P(E \cup F \cup G) = P(E) + P(F) + P(G) - P(E \cap F) - P(E \cap G) - P(F \cap G) + P(E \cap F \cap G)$
+\end{outline}
+
+\subsubsection{Conditional probability}
+
+The conditional probability of an event E given an event F is the probability of E given that F has occurred.
+
+\begin{align*}
+    \text{Let } E, F \text{ be events such that } P(F) > 0 \\
+    P(E \mid F) = \frac{P(E \cap F)}{P(F)}
+\end{align*}
+
+\subsubsection{Independence}
+
+Two events E and F are independent if $P(E \cap F) = P(E)P(F)$.
+
+\subsubsection{Bayes' theorem}
+
+\begin{align*}
+    \text{Let } E, F \text{ be events such that } P(E) > 0 \text{ and } P(F) > 0 \\
+    P(E \mid F) = \frac{P(F \mid E)P(E)}{P(F)}
+\end{align*}
+
+\subsubsection{Random variables}
+
+A random variable is a function that assigns a real number to each outcome in the sample space.
+
+\subsubsection{Probability distribution}
+
+The probability distribution of a random variable X is the function that assigns a probability to each real number x.
+
+\begin{align*}
+    \text{Let } X \text{ be a random variable} \\
+    p(x) = P(X = x)
+\end{align*}
+
+\subsubsection{Expected value}
+
+The expected value of a random variable X is the sum of the product of each possible value of X and its probability.
+
+\begin{align*}
+    \text{Let } X \text{ be a random variable} \\
+    E(X) = \sum_{x \in X(S)} x \cdot p(x)
+\end{align*}
+
+\subsubsection{Variance}
+
+The variance of a random variable X is the expected value of the squared difference between X and its expected value.
+
+\begin{align*}
+    \text{Let } X \text{ be a random variable} \\
+    \sigma_X = 
+\end{align*}
+
+\subsubsection{Standard deviation}
+
+The standard deviation of a random variable X is the square root of its variance.
+
+here is the formula for standard deviation:
+
+\begin{align*}
+    \text{Standard deviation} = \sqrt{\text{Variance}} \\
+    \text{Or more formally:} \\
+    \sigma = \sqrt{Var(X)}
+\end{align*}
+
+\subsubsection{Bernoulli trials}
+
+A Bernoulli trial is an experiment with two possible outcomes: success or failure, such that:
+
+\begin{outline}
+    \1 The probability of success is p
+    \1 The probability of failure is 1 - p
+    \1 The trials are independent
+\end{outline}
+
+\subsubsection{Binomial distribution}
+
+The binomial distribution is the probability distribution of the number of successes in a sequence of n independent Bernoulli trials.
+
+\begin{align*}
+    \text{Let } X \text{ be a random variable} \\
+    p(x) = P(X = x) = \binom{n}{x} p^x (1 - p)^{n - x}
+\end{align*}
+
+\section{Previous mistakes list}
+
+\begin{outline}
+    \1 A group of animals consists of m cats and m dogs. How many ways are there to arrange the animals in a line if cats must alternate with dogs?
+        \2 $2(m!)^2$ because: The line can either start with a cat or with a dog, giving two possibilities. \\
+    Once this is fixed, the cats can be permuted arbitrary, giving $ m! $ possibilities, and the the dogs can be permuted arbitrary, giving $ m! $ possibilities as well. Overall, there are $2(m!)^2$ possibilities.
+    \1 Below, you will see some specific types of logical statements. \\
+    Sort them according to the following order: \\
+    -- rank top (number 1) those than are most often necessarily true \\
+    -- rank bottom (number 4) those than are most often necessarily false \\
+    -- in between cases a and b, rank bottom those that are necessarily false more often.\\
+    \2 Contradiction: always false \\
+    Tautology: always true \\
+    Contingent: This is sometimes true, sometimes false. Since it is necessarily at least once false, then it ranks lower than satisfiable. \\
+    Satisfiable: At least once true. This can still mean always true and therefore never false. \\
+    \1 There can be a language corresponding to regular expression $ \emptyset $.
+\end{outline}
 \end{document}
