@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.26)  5 FEB 2024 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.26)  5 FEB 2024 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -498,6 +498,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 Package hyperref Info: Link coloring OFF on input line 33.
+ (./com1029.out) (./com1029.out)
 \@outlinefile=\write4
 \openout4 = `com1029.out'.
 
@@ -528,12 +529,11 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-No file com1029.toc.
+) (./com1029.toc)
 \tf@toc=\write5
 \openout5 = `com1029.toc'.
 
-[1
+ [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
@@ -550,22 +550,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-/Users/jim/dev/math/com1029.tex:92: Missing $ inserted.
-<inserted text> 
-                $
-l.92 Example: f(N) = 10N^
-                         (3) + N^(2) + 40N + 80 \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/jim/dev/math/com1029.tex:97: Missing $ inserted.
-<inserted text> 
-                $
-l.97 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
@@ -576,29 +560,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--97
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-Package rerunfilecheck Warning: File `com1029.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `com1029.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1D8C34E00794E2F0AA7CD9244B8172B4;839.
+Package rerunfilecheck Info: File `com1029.out' has not changed.
+(rerunfilecheck)             Checksum: 1D8C34E00794E2F0AA7CD9244B8172B4;839.
  ) 
 Here is how much of TeX's memory you used:
- 22817 strings out of 474228
- 428899 string characters out of 5746458
- 2004975 words of memory out of 5000000
- 44695 multiletter control sequences out of 15000+600000
+ 22832 strings out of 474228
+ 429127 string characters out of 5746458
+ 1967975 words of memory out of 5000000
+ 44704 multiletter control sequences out of 15000+600000
  566744 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,6n,107p,496b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on com1029.pdf (2 pages, 124096 bytes).
+ 102i,6n,107p,496b,1977s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on com1029.pdf (2 pages, 117351 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  27 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
