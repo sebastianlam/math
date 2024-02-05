@@ -1,0 +1,98 @@
+\documentclass{article}
+\author{Jim Lam}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\title{COM1029 Data Structures and Algorithms}
+\maketitle
+\tableofcontents
+\section{Algorithms}
+
+\subsection{History of Algorithms}
+
+My boy Muhammad ibn Musa al-Khwarizmi was the first to write a book on the systematic solution of linear and quadratic equations. He was a Persian mathematician, astronomer, and geographer during the Abbasid Caliphate, a scholar in the House of Wisdom in Baghdad. He was the first to introduce the concept of algorithm to the Western world. The word algorithm comes from the Latin word \textit{algorismus}, which is a Latinization of his name.
+He is also known for his work on algebra, which is derived from the Arabic word \textit{al-jabr}.
+
+\subsection{Algorigthm analysis}
+
+\subsubsection{Time complexity}
+
+Example (find the average of an array of n integers)
+
+\begin{lstlisting}
+% find the average of an array of n integers
+    int sum = 0;                    // 1
+    for (int i = 0; i < n; i++) {   // n
+        sum += i;                   // n
+    }
+    return sum / n;                 // 1
+
+\end{lstlisting}
+
+Quadratic example:
+
+\begin{lstlisting}
+% find the sum of an array of n integers
+    int[][] a = someArray;          // 1
+    int sum = 0;                        // 1
+    for (int i = 0; i < len(a); i++) {       // n
+        for (int j = 0; j < len(a[i]); j++) {   // n^2
+            sum += a[1][j];                   // n^2
+        }
+    }
+    return sum;                         // 1
+\end{lstlisting}
+
+\subsubsection{Dominant term}
+
+The dominant term is the one with highest power (degree) in a function
+
+Example: the cubic function f(N) = 10N3 + N2 + 40N + 80 \\
+
+    - 10N3 is the dominant term (among 10N3 , N2 , 40N and 80) \\
+    - When we look at f(1000) = 10,001,00,080, we see that 10,000,000,000 is due to the 10N3 term \\
+    - If we use the approximation f(N) = 10N3, then we would only be 0.01\% out \\
+
+The value of f(N) is largely determined by the dominant term, for sufficiently large N \\
+    - The meaning of ‘sufficiently large’ varies according to the function \\
+
+
+\subsubsection{Big O notation}
+
+Compared to evaluating the dominant term, Big O notation is a more general way of expressing the time complexity of an algorithm. It is a way of expressing the upper bound of a function.
+
+Example: f(N) = 10N^(3) + N^(2) + 40N + 80 \\
+    - f(N) is O(N3) \\
+    - f(N) is O(N2) \\
+    - f(N) is O(N) \\
+    - f(N) is O(1) \\
+
+\end{document}

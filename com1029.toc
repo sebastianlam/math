@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Algorithms}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}History of Algorithms}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Algorigthm analysis}{1}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Time complexity}{1}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Dominant term}{2}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Big O notation}{2}{subsubsection.1.2.3}%
