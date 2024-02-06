@@ -1,0 +1,86 @@
+\documentclass{article}
+\author{Jim S. Lam}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\title{COM1033 FOUNDATIONS OF COMPUTING II}
+\maketitle
+\tableofcontents
+\pagebreak
+\section{Vectors}
+\subsection{Vector Definition}
+
+Let n $\in$ $\mathbb{N}$ and n $>$ 0.
+
+The set of all vectors is the cartesian product of $\mathbb{R}$ by n times.
+
+\begin{align*}
+    \mathbb{R}^3 = \{ (x, y, z) \mid x, y, z \in \mathbb{R} \}
+\end{align*}
+
+\subsection{Vector Operations}
+\subsubsection{Addition}
+\subsubsection{Scalar Multiplication}
+\subsubsection{Dot Product / Scalar Product}
+\subsubsection{Exercises}
+Question 1
+\begin{align*}
+    \textrm{I forgot.}
+\end{align*}
+Question 2
+\begin{align*}
+    \vec{u} &= \begin{pmatrix} 3 \\ 5 \\ -4 \end{pmatrix} \quad \vec{v} = \begin{pmatrix} 2 \\ 2 \\ 4 \end{pmatrix} \\
+    \vec{u} \dot \vec{v} &= 3 \cdot 2 + 5 \cdot 2 + -4 \cdot 4 \\
+    &= 6 + 10 - 16 \\
+    &= 0
+\end{align*}
+Question 3
+\begin{align}
+    \vec{v_1} = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \quad \vec{v_2} = \begin{pmatrix} 0 \\ 2 \\ 2 \end{pmatrix} \quad \vec{v_3} = \begin{pmatrix} 1 \\ 6 \\ 5 \end{pmatrix} \\
+    \textrm{when: } \lambda_1 = 1, \lambda_2 = 2, \lambda_3 = -1 \\
+    \lambda_1 \vec{v_1} + \lambda_2 \vec{v_2} + \lambda_3 \vec{v_3} &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}
+\end{align}
+Question 4:
+
+Let $v_1, v_2, ..., v_n$ be n linearly independent vectors.
+Consider the the set of scalers $\lambda_1, \lambda_2, ..., \lambda_n$ such that $\lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_n v_n = 0$.
+Find alternative sets of the scalers.
+\begin{align*}
+    \textrm{Just multiply all the scalars by a common scaling factor, let's say } \mu
+\end{align*}
+
+Question 5:
+\begin{align*}
+    \textrm{} \\
+    a_3 \textrm{ is on the same line}
+\end{align*}
+
+\end{document}

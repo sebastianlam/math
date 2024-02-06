@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Vectors}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Vector Definition}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Vector Operations}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Addition}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Scalar Multiplication}{2}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Dot Product / Scalar Product}{2}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Exercises}{2}{subsubsection.1.2.4}%
