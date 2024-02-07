@@ -38,9 +38,9 @@
 \section{Vectors}
 \subsection{Vector Definition}
 
-Let n $\in$ $\mathbb{N}$ and n $>$ 0.
+Let n $\in$ $\mathbb{N}$ and $n$ $>$ 0.
 
-The set of all vectors is the cartesian product of $\mathbb{R}$ by n times.
+The set of all vectors is the cartesian product of $\mathbb{R}$ by $n$ times, which is a set of ordered $n$-tuples of real numbers.
 
 \begin{align*}
     \mathbb{R}^3 = \{ (x, y, z) \mid x, y, z \in \mathbb{R} \}
@@ -48,12 +48,51 @@ The set of all vectors is the cartesian product of $\mathbb{R}$ by n times.
 
 \subsection{Vector Operations}
 \subsubsection{Addition}
-\subsubsection{Scalar Multiplication}
-\subsubsection{Dot Product / Scalar Product}
-\subsubsection{Exercises}
-Question 1
 \begin{align*}
-    \textrm{I forgot.}
+    \begin{pmatrix} a \\ b \\ c \end{pmatrix} + \begin{pmatrix} d \\ e \\ f \end{pmatrix} = \begin{pmatrix} a + d \\ b + e \\ c + f \end{pmatrix}
+\end{align*}
+\subsubsection{Scalar Multiplication}
+\begin{align*}
+    \lambda
+    \begin{pmatrix}
+        a \\ b \\ c
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \lambda a \\ \lambda b \\ \lambda c
+    \end{pmatrix}
+\end{align*}
+\subsubsection{Dot Product / Scalar Product}
+\begin{align*}
+    \begin{pmatrix} a \\ b \\ c \end{pmatrix} \cdot \begin{pmatrix} d \\ e \\ f \end{pmatrix} = (a \cdot d) + (b \cdot e) + (c \cdot f)
+\end{align*}
+\subsubsection{Linear Combination}
+Let $ \lambda_1, \lambda_2, ... , \lambda_n $ be $n$ scalars, and $ \vec{v_1}, \vec{v_2}, ..., \vec{v_n} $ be $n$ vectors.
+\begin{align*}
+    \vec{w} = \lambda_1 \vec{v_1} + \lambda_2 \vec{v_2} + ... + \lambda_n \vec{v_n}
+\end{align*}
+$ \vec{w} $ is a linear combination of $ \vec{v_1}, \vec{v_2}, ..., \vec{v_n} $ using the scalars $ \lambda_1, \lambda_2, ... , \lambda_n $.
+
+\subsubsection{Linear Dependence}
+
+Let there be $n$ vectors of the same dimension.
+
+If the null vector $ \vec{o} $ can be expressed as linear combination of the $n$ vectors as defined, using non null scalars.
+
+In other words, the $n$ vectors are linearly dependent if:
+
+\begin{align*}
+    \vec{w} = \lambda_1 \vec{v_1} + \lambda_2 \vec{v_2} + ... + \lambda_n \vec{v_n} \mid \exists \lambda_1, \lambda_2, ..., \lambda_n \neq 0, 0, ..., 0
+\end{align*}
+
+\subsubsection{Exercises}
+Question 1:
+Sum the following vectors $\in \mathbb{R}^3$:
+\begin{align*}
+    % \textrm{I forgot.}
+    \vec{v_1} &= \begin{pmatrix} 3 \\ 5 \\ -4 \end{pmatrix}, \vec{v_2} = \begin{pmatrix} 0 \\ 1 \\ 4 \end{pmatrix} \\
+    \textrm{Calculate the product } \lambda \vec{v_1} \textrm{ with } \lambda &= 2 \\
+    \lambda \vec{v_1} &= \begin{pmatrix} 6 \\ 10 \\ -8 \end{pmatrix}
 \end{align*}
 Question 2
 \begin{align*}

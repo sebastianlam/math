@@ -4,4 +4,6 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Addition}{2}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Scalar Multiplication}{2}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.3}Dot Product / Scalar Product}{2}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Exercises}{2}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.4}Linear Combination}{2}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Linear Dependence}{2}{subsubsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.6}Exercises}{3}{subsubsection.1.2.6}%
