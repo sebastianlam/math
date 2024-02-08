@@ -1,0 +1,74 @@
+\documentclass{article}
+\author{Jim S. Lam}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage[edges]{forest}
+\usetikzlibrary{arrows.meta}
+
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\title{COM1032 OPERATING SYSTEMS}
+\maketitle
+\tableofcontents
+\pagebreak
+\section{OPERATING SYSTEM DEFINITION}
+
+An Operating System is a program that controls the execution of user programs and acts as an intermediary between users and computer hardware.
+
+It is a software layer between application programs and computer hardware.
+
+\begin{forest}
+    for tree={
+      align=center,
+      font=\sffamily,
+      edge+={thick, -{Stealth[]}},
+      l sep'+=10pt,
+      fork sep'=10pt,
+    },
+    forked edges,
+    if level=0{
+      inner xsep=0pt,
+      tikz={\draw [thick] (.children first) -- (.children last);}
+    }{},
+    [Hardware
+      [
+        System software (Operating systems)
+        [
+            Application software
+            [
+                Users
+            ]
+        ]
+      ]
+    ]
+  \end{forest}
+
+\end{document}
