@@ -153,15 +153,231 @@ v_1 + 2v_2 - v_3 \textrm{ i.e.:} \\
 \begin{pmatrix} 1 \\ 2 \\ 1 \\ \end{pmatrix} + 2 \begin{pmatrix} 0 \\ 1 \\ 2 \\ \end{pmatrix} - \begin{pmatrix} 3 \\ 0 \\ 1 \\ \end{pmatrix} = \begin{pmatrix} -1 \\ 3 \\ -1 \\ \end{pmatrix}
 -1 -(0) -(0) + 0 + 6 -(-12) = 17 \\
 \end{align}
-Start with a matrix with a determinant of 0. \\
-\begin{align*}
+
+Start with a matrix with a determinant of 0.
+
+\begin{align}
 \begin{pmatrix}
-    a_1_1 & a_1_2 & a_1_3 \\
+a_11 & a_12 & a_13 \\
+a_21 & a_22 & a_23 \\
+a_31 & a_32 & a_33 \\
+\end{pmatrix} \\
+\mathbb{M} = 
+\begin{pmatrix}
+1 & 0 & 2 \\
+3 & 5 & 1 \\
+2 & 2 & 0 \\
 \end{pmatrix}
-\end{align*}
+\end{align}
+
+the first laplace theorem is to expand the determinant of a matrix along the first row. 
+
+\begin{align}
+a_11 \begin{pmatrix}
+5 & 1 \\
+2 & 0 \\
+\end{pmatrix}
+- a_12 \begin{pmatrix}
+3 & 1 \\
+2 & 0 \\
+\end{pmatrix}
++ a_13 \begin{pmatrix}
+3 & 5 \\
+2 & 2 \\
+\end{pmatrix}
+\end{align}
+
+for the example matrix $\mathbb{M}$:
+
+\begin{align}
+\det(\mathbb{M}) = 6 - 6 - 0 + 6 + 0 - 12 = -6 \\ 
+\end{align}
+
+2. Yes
+
+question 4: 2
+
 Row three is a null row. \\
 has determinant 0 \\
 Row three plus a row one multiplied by the some scalar has the same determinant. \\
 Row three plus row two multiplied by the some scalar has the same determinant. \\
 -170 \textrm{for both det(}AB\textrm{) and det(}BA\textrm{)}
+
+\section{Linear Equations}
+
+\subsection{System of Linear Equations}
+
+\begin{align}
+    \begin{cases}
+        a_{1,1}x + a_{1,2}y = b_1 \\
+        a_{2,1}x + a_{2,2}y = b_2
+    \end{cases}
+\end{align}
+
+the above can be expressed as a matrix equation:
+
+\begin{align}
+    \begin{pmatrix}
+        a_{1,1} & a_{1,2} \\
+        a_{2,1} & a_{2,2}
+    \end{pmatrix}
+    \begin{pmatrix}
+        x \\
+        y
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        b_1 \\
+        b_2
+    \end{pmatrix}
+\end{align}
+
+Let's use a 4 by 4 square matrix as an example:
+
+\begin{align}
+    \begin{pmatrix}
+        a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\
+        a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4} \\
+        a_{3,1} & a_{3,2} & a_{3,3} & a_{3,4} \\
+        a_{4,1} & a_{4,2} & a_{4,3} & a_{4,4} \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        x \\
+        y \\
+        z \\
+        w \\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        b_1 \\
+        b_2 \\
+        b_3 \\
+        b_4 \\
+    \end{pmatrix}
+\end{align}
+
+/subsubsection{Kramer's method}
+
+For the above 4 by 4 matrix, we can solve for $x$ by using the following formula:
+
+\begin{align}
+    x = \frac{\det(\mathbb{M}_x)}{\det(\mathbb{M})}
+\end{align}
+
+note that $\mathbb{M}_x$ is the matrix $\mathbb{M}$ with the first column replaced by the column vector $\mathbb{B}$.
+
+So $ x_1 $ for instance would be:
+
+\begin{align}
+    x_1 = \frac{\det(\mathbb{M}_1)}{\det(\mathbb{M})} \\
+    \textrm{Where } \mathbb{M}_1 =
+    \begin{pmatrix}
+        b_1 & a_{1,2} & a_{1,3} & a_{1,4} \\
+        b_2 & a_{2,2} & a_{2,3} & a_{2,4} \\
+        b_3 & a_{3,2} & a_{3,3} & a_{3,4} \\
+        b_4 & a_{4,2} & a_{4,3} & a_{4,4} \\
+    \end{pmatrix}
+\end{align}
+
+\subsubsection{Mock test}
+
+\begin{align*}
+    \begin{cases}
+        3x - 2y + z = 2 \\
+        2z = 2 \\
+        x + y = 2 \\
+    \end{cases}
+    \textrm{Can be expressed as:} \\
+    \begin{pmatrix}
+        3 & -2 & 1 \\
+        0 & 0 & 2 \\
+        1 & 1 & 0 \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        x \\
+        y \\
+        z \\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        2 \\
+        2 \\
+        2 \\
+    \end{pmatrix}
+    \textrm{the determinant of the matrix is:} \\
+    0 - 6 - 0 - 4 + 0 - 0 = -10 \\
+    \textrm{It is solvable.} \\
+    \textrm{The solution for x is:} \\
+    \det(\mathbb{M}_x) =
+    \det(\begin{pmatrix}
+        2 & -2 & 1 \\
+        2 & 0 & 2 \\
+        2 & 1 & 0 \\
+    \end{pmatrix})
+    = 0 - 4 + 0 - 8 + 2 - 0 = -10 \\
+    = \frac{-10}{-10} = 1 \\
+    \textrm{Question 2.} \\
+    \begin{pmatrix}
+        3 & -2 & 1 \\
+        2 & 0 & 2 \\
+        1 & 1 & 2 \\
+    \end{pmatrix}
+    \begin{pmatrix}
+        x \\
+        y \\
+        z \\
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        2 \\
+        2 \\
+        2 \\
+    \end{pmatrix}
+    \textrm{the determinant of the matrix is:} \\
+    0 - 6 + 8 - 4 + 2 + 0 = 0 \\
+    \textrm{It is not solvable.} \\
+    \textrm{Question 3.} \\
+    \det(
+    \begin{pmatrix}
+        1 & 1 & 0 & 1\\
+        4 & 1 & -1 & 0\\
+        2 & -1 & 1 & 2\\
+    \end{pmatrix})
+    =
+    \det(
+    \begin{pmatrix}
+        1 & 1 & 0 & 1\\
+        4 & 1 & -1 & 0\\
+        0 & -3 & 1 & 0\\
+    \end{pmatrix})
+    =
+    \det(
+    \begin{pmatrix}
+        1 & 1 & 0 & 1\\
+        0 & -3 & -1 & -4\\
+        0 & -3 & 1 & 0\\
+    \end{pmatrix}
+    )
+    =
+    \det(
+    \begin{pmatrix}
+        1 & 1 & 0 & 1\\
+        0 & -3 & -1 & -4\\
+        0 & 0 & 2 & 4\\
+    \end{pmatrix}
+    ) \\
+    z = 2 \\
+    -3y -1(2) = -4 \\
+    -3y = -2 \\
+    y = \frac{2}{3} \\
+    x = \frac{1}{3} \\
+    \textrm{Question 4.} \\
+    \begin{pmatrix}
+    0 & a & b\\
+    c & 0 & d\\
+    e & f & 0\\
+    \end{pmatrix}
+\end{align*}
+
+
 \end{document}

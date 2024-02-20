@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.26)  13 FEB 2024 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.26)  20 FEB 2024 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -498,6 +498,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 Package hyperref Info: Link coloring OFF on input line 33.
+ (./com1033.out) (./com1033.out)
 \@outlinefile=\write4
 \openout4 = `com1033.out'.
 
@@ -528,88 +529,38 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-No file com1033.toc.
+) (./com1033.toc)
 \tf@toc=\write5
 \openout5 = `com1033.toc'.
 
-[1
+ [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
-
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+Overfull \hbox (129.44492pt too wide) detected at line 380
+[]
  []
 
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_
-                                 1 & a_1_2 & a_1_3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_1 & a_1_
-                                         2 & a_1_3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_1 & a_1_2 & a_1_
-                                                 3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_
-                                 1 & a_1_2 & a_1_3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_1 & a_1_
-                                         2 & a_1_3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-/Users/jim/dev/math/com1033.tex:161: Double subscript.
-<argument>  \begin {pmatrix} a_1_1 & a_1_2 & a_1_
-                                                 3 \\ \end {pmatrix} 
-l.161 \end{align*}
-                  
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-[4] (./com1033.aux)
+[5] [6] (./com1033.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-Package rerunfilecheck Warning: File `com1033.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `com1033.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1E8D0779BA67E4A608031F116B76562B;1659.
+Package rerunfilecheck Info: File `com1033.out' has not changed.
+(rerunfilecheck)             Checksum: A3E4E26E6C8344D4CA94C27679F508D8;2099.
  ) 
 Here is how much of TeX's memory you used:
- 22484 strings out of 474228
- 426257 string characters out of 5746458
- 1940975 words of memory out of 5000000
- 44364 multiletter control sequences out of 15000+600000
+ 22526 strings out of 474228
+ 426895 string characters out of 5746458
+ 1953975 words of memory out of 5000000
+ 44384 multiletter control sequences out of 15000+600000
  565932 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,107p,454b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,14n,107p,454b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on com1033.pdf (4 pages, 128269 bytes).
+Output written on com1033.pdf (6 pages, 140957 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
