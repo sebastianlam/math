@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.14)  14 APR 2024 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.14)  14 APR 2024 22:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/jimlam/dev/math/com1033.tex
-(/Users/jimlam/dev/math/com1033.tex
+**/Users/jimlam/dev/math/com1033revised.tex
+(/Users/jimlam/dev/math/com1033revised.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -478,8 +478,8 @@ File: lstlang1.sty 2024/03/11 1.10a listings language file
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box86
-) (./com1033.aux)
-\openout1 = `com1033.aux'.
+) (./com1033revised.aux)
+\openout1 = `com1033revised.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -500,9 +500,9 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 Package hyperref Info: Link coloring OFF on input line 33.
- (./com1033.out) (./com1033.out)
+ (./com1033revised.out) (./com1033revised.out)
 \@outlinefile=\write4
-\openout4 = `com1033.out'.
+\openout4 = `com1033revised.out'.
 
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -531,43 +531,53 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./com1033.toc)
+) (./com1033revised.toc)
 \tf@toc=\write5
-\openout5 = `com1033.toc'.
+\openout5 = `com1033revised.toc'.
 
  [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-Overfull \hbox (14.66617pt too wide) detected at line 181
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Overfull \hbox (11.0815pt too wide) detected at line 133
 []
  []
 
-[5] [6]
-Overfull \hbox (129.44492pt too wide) detected at line 406
+
+Overfull \hbox (10.15732pt too wide) detected at line 165
 []
  []
 
-[7] [8] [9] (./com1033.aux)
+[4] [5] [6]
+Overfull \hbox (56.78198pt too wide) detected at line 319
+[]
+ []
+
+[7] [8] [9] [10] [11]
+Overfull \hbox (6.26797pt too wide) detected at line 625
+[]
+ []
+
+[12] [13] (./com1033revised.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-Package rerunfilecheck Info: File `com1033.out' has not changed.
-(rerunfilecheck)             Checksum: 6DC9DA858F76916882A0D4C3C6E1832E;2178.
+Package rerunfilecheck Info: File `com1033revised.out' has not changed.
+(rerunfilecheck)             Checksum: C41B9001A2951B9577250C1DA5247036;3892.
  ) 
 Here is how much of TeX's memory you used:
- 22537 strings out of 474104
- 427019 string characters out of 5743467
- 1951493 words of memory out of 5000000
- 44509 multiletter control sequences out of 15000+600000
+ 22574 strings out of 474104
+ 427580 string characters out of 5743467
+ 1948493 words of memory out of 5000000
+ 44519 multiletter control sequences out of 15000+600000
  566551 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,107p,457b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on com1033.pdf (9 pages, 145033 bytes).
+ 102i,20n,107p,464b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on com1033revised.pdf (13 pages, 184388 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

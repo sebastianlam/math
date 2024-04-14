@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1713131011.84238 "/Users/jimlam/dev/math/com1033.tex" "com1033.pdf" "com1033" 1713131012.54527 0
-  "/Users/jimlam/dev/math/com1033.tex" 1713131011.60648 12392 d41d3fb5c599614e74e94159d6fee9fc ""
+["pdflatex"] 1713131444.69513 "/Users/jimlam/dev/math/com1033revised.tex" "com1033revised.pdf" "com1033revised" 1713131445.44528 0
+  "/Users/jimlam/dev/math/com1033revised.tex" 1713131443.72722 28274 e972a6750e25bd96c7a1da045e58aeb7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -33,8 +33,10 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -166,14 +168,14 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1713129912 5474190 6dcabce74a8cc1ac6c708b578cc057af ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1713129949 8222891 836e5b3842401816d7f396c492d2212a ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "com1033.aux" 1713131012.47812 2015 34e55cc6401f0c9dc397bc8fe982a3c1 "pdflatex"
-  "com1033.out" 1713131012.47898 2178 6dc9da858f76916882a0d4c3c6e1832e "pdflatex"
-  "com1033.tex" 1713131011.60648 12392 d41d3fb5c599614e74e94159d6fee9fc ""
-  "com1033.toc" 1713131012.47917 1238 fac384aab4718594b77cb5de204b84c9 "pdflatex"
+  "com1033revised.aux" 1713131445.37616 3193 48d37ab85bc9b2a18ff8332fbc4cc404 "pdflatex"
+  "com1033revised.out" 1713131445.37713 3892 c41b9001a2951b9577250c1da5247036 "pdflatex"
+  "com1033revised.tex" 1713131443.72722 28274 e972a6750e25bd96c7a1da045e58aeb7 ""
+  "com1033revised.toc" 1713131445.37739 2046 e0a950e6f4d6539725fca795af919cd6 "pdflatex"
   (generated)
-  "com1033.aux"
-  "com1033.log"
-  "com1033.out"
-  "com1033.pdf"
-  "com1033.toc"
+  "com1033revised.aux"
+  "com1033revised.log"
+  "com1033revised.out"
+  "com1033revised.pdf"
+  "com1033revised.toc"
   (rewritten before read)
