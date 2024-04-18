@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  18 APR 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  18 APR 2024 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,13 +527,13 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./com1033revised.toc)
+) (./com1033revised.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `com1033revised.toc'.
 
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+ [2] [3] [4]
 Overfull \hbox (11.0815pt too wide) detected at line 133
 []
  []
@@ -555,21 +555,21 @@ Overfull \hbox (6.26797pt too wide) detected at line 625
 
 [13] [14] [15] (./com1033revised.aux)
 Package rerunfilecheck Info: File `com1033revised.out' has not changed.
-(rerunfilecheck)             Checksum: E4DED3139C742DC2BD653D673B5A26F4;4147.
+(rerunfilecheck)             Checksum: FA9BC60AFDC65DF121FBA7AB7A67C220;4482.
  ) 
 Here is how much of TeX's memory you used:
- 22363 strings out of 478287
- 425394 string characters out of 5849289
- 885445 words of memory out of 5000000
- 40115 multiletter control sequences out of 15000+600000
+ 22372 strings out of 478287
+ 425519 string characters out of 5849289
+ 884445 words of memory out of 5000000
+ 40120 multiletter control sequences out of 15000+600000
  477741 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,20n,104p,480b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on com1033revised.pdf (15 pages, 188040 bytes).
+Output written on com1033revised.pdf (15 pages, 189259 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
