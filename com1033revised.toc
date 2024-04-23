@@ -22,5 +22,7 @@
 \contentsline {subsubsection}{\numberline {5.1.1}Cramer's Rule}{9}{subsubsection.5.1.1}%
 \contentsline {section}{\numberline {6}Vector Spaces}{11}{section.6}%
 \contentsline {section}{\numberline {7}Linear Transformations}{14}{section.7}%
-\contentsline {section}{\numberline {8}Multivariable Calculus}{14}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Examples}{14}{subsection.8.1}%
+\contentsline {section}{\numberline {8}Multi-variate Calculus}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Function, limits and continuity}{15}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Intervals}{15}{subsubsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.2}Examples}{15}{subsection.8.2}%
