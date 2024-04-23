@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1713456503.74364 "/Users/jim/dev/math/com1033revised.tex" "com1033revised.pdf" "com1033revised" 1713456505.17888 0
-  "/Users/jim/dev/math/com1033revised.tex" 1713456503.42553 28887 535c846832720512c38f78363abe8782 ""
+["pdflatex"] 1713878604.16173 "/Users/jim/dev/math/com1033revised.tex" "com1033revised.pdf" "com1033revised" 1713878606.02342 0
+  "/Users/jim/dev/math/com1033revised.tex" 1713878603.82599 28959 1707a2f37520e973a5e745c9589be35a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -167,10 +167,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706265603.10527 4993097 9a4fc1f062d9d0f055c7bc5a5f93f223 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706265685 8211148 e232e13d3ea04b46744151c8f0b8e03b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "com1033revised.aux" 1713456505.01155 3429 56af19e4951e53cec7da31ff3ccd3092 "pdflatex"
-  "com1033revised.out" 1713456505.01844 4147 58f55149dc7046c692141fa44142f5c4 "pdflatex"
-  "com1033revised.tex" 1713456503.42553 28887 535c846832720512c38f78363abe8782 ""
-  "com1033revised.toc" 1713456505.01904 2200 69f5e2604f0c6295ddb1b85212689d18 "pdflatex"
+  "com1033revised.aux" 1713878605.82038 3429 56af19e4951e53cec7da31ff3ccd3092 "pdflatex"
+  "com1033revised.out" 1713878605.8272 4147 58f55149dc7046c692141fa44142f5c4 "pdflatex"
+  "com1033revised.tex" 1713878603.82599 28959 1707a2f37520e973a5e745c9589be35a ""
+  "com1033revised.toc" 1713878605.82789 2200 69f5e2604f0c6295ddb1b85212689d18 "pdflatex"
   (generated)
   "com1033revised.aux"
   "com1033revised.log"
