@@ -1,0 +1,194 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\setlength{\columnsep}{1cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+% Define the \tr command for matrix trace
+\newcommand{\tr}{\operatorname{tr}}
+
+\begin{document}
+
+\title{\textbf{Advanced Mathematical Reference}}
+\author{}
+\date{}
+\maketitle
+
+\tableofcontents
+
+\section{Set Theory}
+
+\subsection{Basic Definitions}
+\begin{itemize}[leftmargin=*]
+\item Set: Collection of distinct objects
+\item $\emptyset$: Empty set
+\item $\{x : P(x)\}$: Set of all x satisfying property P
+\item $A \subseteq B$: A is a subset of B
+\end{itemize}
+
+\subsection{Set Operations}
+\begin{itemize}[leftmargin=*]
+\item $A \cup B$: Union
+\item $A \cap B$: Intersection
+\item $A \setminus B$: Set difference
+\item $A^c$: Complement of A
+\item $\mathcal{P}(A)$: Power set of A
+\end{itemize}
+
+\section{Linear Algebra}
+
+\subsection{Vector Spaces}
+\begin{definition}
+A vector space V over a field F is a set with operations + and · satisfying:
+\begin{enumerate}[leftmargin=*]
+\item Closure under addition and scalar multiplication
+\item Associativity and commutativity of addition
+\item Existence of zero vector and additive inverses
+\item Distributivity of scalar multiplication over vector addition
+\item Distributivity of scalar multiplication over field addition
+\item Associativity of scalar multiplication
+\item Existence of multiplicative identity for scalars
+\end{enumerate}
+\end{definition}
+
+\subsection{Linear Independence}
+\begin{definition}
+Vectors $\{v_1, \ldots, v_n\}$ are linearly independent if $\sum_{i=1}^n c_i v_i = 0$ implies $c_i = 0$ for all i.
+\end{definition}
+
+\subsection{Basis and Dimension}
+\begin{definition}
+A basis for a vector space V is a linearly independent set that spans V. The dimension of V is the cardinality of its basis.
+\end{definition}
+
+\subsection{Linear Transformations}
+\begin{definition}
+A linear transformation T: V → W is a function satisfying:
+\begin{enumerate}[leftmargin=*]
+\item T(u + v) = T(u) + T(v)
+\item T(cv) = cT(v)
+\end{enumerate}
+\end{definition}
+
+\subsection{Matrices}
+\begin{itemize}[leftmargin=*]
+\item Matrix multiplication: $(AB)_{ij} = \sum_{k=1}^n a_{ik} b_{kj}$
+\item Determinant (2x2): $\det\begin{pmatrix}a & b \\ c & d\end{pmatrix} = ad - bc$
+\item Trace: $\tr(A) = \sum_{i=1}^n a_{ii}$
+\item Eigenvalues: $\det(A - \lambda I) = 0$
+\item Eigenvectors: $(A - \lambda I)v = 0$
+\end{itemize}
+
+\section{Analysis}
+
+\subsection{Limits}
+\begin{definition}
+$\lim_{x \to a} f(x) = L$ if $\forall \epsilon > 0, \exists \delta > 0$ such that $0 < |x - a| < \delta \implies |f(x) - L| < \epsilon$
+\end{definition}
+
+\subsection{Continuity}
+\begin{definition}
+f is continuous at a if $\lim_{x \to a} f(x) = f(a)$
+\end{definition}
+
+\subsection{Differentiation}
+\begin{itemize}[leftmargin=*]
+\item $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
+\item Product rule: $(fg)' = f'g + fg'$
+\item Chain rule: $(f \circ g)' = (f' \circ g) \cdot g'$
+\end{itemize}
+
+\subsection{Integration}
+\begin{itemize}[leftmargin=*]
+\item Definite integral: $\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x$
+\item Fundamental Theorem of Calculus:
+  \begin{enumerate}[leftmargin=*]
+  \item If $F' = f$, then $\int_a^b f(x) dx = F(b) - F(a)$
+  \item $\frac{d}{dx} \int_a^x f(t) dt = f(x)$
+  \end{enumerate}
+\end{itemize}
+
+\section{Topology}
+
+\subsection{Metric Spaces}
+\begin{definition}
+A metric space (X, d) is a set X with a function d: X × X → R satisfying:
+\begin{enumerate}[leftmargin=*]
+\item d(x, y) $\geq$ 0 and d(x, y) = 0 iff x = y
+\item d(x, y) = d(y, x)
+\item d(x, z) $\leq$ d(x, y) + d(y, z)
+\end{enumerate}
+\end{definition}
+
+\subsection{Open and Closed Sets}
+\begin{itemize}[leftmargin=*]
+\item Open ball: $B_r(x) = \{y \in X : d(x, y) < r\}$
+\item Open set: A $\subseteq$ X is open if $\forall x \in A, \exists r > 0$ such that $B_r(x) \subseteq A$
+\item Closed set: A is closed if $A^c$ is open
+\end{itemize}
+
+\section{Complex Analysis}
+
+\subsection{Complex Numbers}
+\begin{itemize}[leftmargin=*]
+\item $z = a + bi$, where $i^2 = -1$
+\item $|z| = \sqrt{a^2 + b^2}$
+\item $\bar{z} = a - bi$
+\item $e^{i\theta} = \cos\theta + i\sin\theta$
+\end{itemize}
+
+\subsection{Analytic Functions}
+\begin{definition}
+f is analytic at $z_0$ if it is differentiable in a neighborhood of $z_0$.
+\end{definition}
+
+\subsection{Cauchy-Riemann Equations}
+For $f(x+yi) = u(x,y) + v(x,y)i$:
+\begin{equation*}
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+\end{equation*}
+
+\subsection{Contour Integration}
+\begin{itemize}[leftmargin=*]
+\item $\oint_C f(z) dz = \int_a^b f(z(t)) z'(t) dt$
+\item Cauchy's Integral Formula: $f(a) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z-a} dz$
+\end{itemize}
+
+\section{Probability and Statistics}
+
+\subsection{Probability Basics}
+\begin{itemize}[leftmargin=*]
+\item $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+\item $P(A|B) = \frac{P(A \cap B)}{P(B)}$
+\item Bayes' Theorem: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$
+\end{itemize}
+
+\subsection{Random Variables}
+\begin{itemize}[leftmargin=*]
+\item Expected value: $E[X] = \sum_x x P(X=x)$ or $\int_{-\infty}^{\infty} x f(x) dx$
+\item Variance: $Var(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$
+\end{itemize}
+
+\subsection{Common Distributions}
+\begin{itemize}[leftmargin=*]
+\item Binomial: $P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$
+\item Poisson: $P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}$
+\item Normal: $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+\end{itemize}
+
+\end{document}
