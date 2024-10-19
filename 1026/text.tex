@@ -41,7 +41,7 @@ radius=1.5cm, rotate=-50]} \def\bounding{(-5,-3) rectangle (5,4)}
     \large 01 IFH 02 - Ada \\
     Lovelace Lab 129 \\
     Time: 15:30 - 17:30 \\
-    }
+}
 \maketitle
 \tableofcontents
 \section{Set Theory}
@@ -822,7 +822,7 @@ Therefore, Socrates is mortal.
 A predicate is a function that returns a boolean value.
 
 \begin{align*}
-    \text{Let } P(x) & = \text{"x is a prime number"} \\
+    \text{Let } P(x) & = \text{"x is a prime number"}   \\
     \text{Let } Q(x) & = \text{"x is a perfect square"}
 \end{align*}
 
@@ -831,7 +831,7 @@ A predicate is a function that returns a boolean value.
 Quantifiers are used to express the extent to which a predicate is true.
 
 \begin{align*}
-    \forall x \in \mathbb{N} : P(x) & = \text{"For all x in the set of natural numbers, P(x) is true"} \\
+    \forall x \in \mathbb{N} : P(x) & = \text{"For all x in the set of natural numbers, P(x) is true"}                  \\
     \exists x \in \mathbb{N} : P(x) & = \text{"There exists an x in the set of natural numbers such that P(x) is true"}
 \end{align*}
 
@@ -849,13 +849,13 @@ Quantifiers are used to express the extent to which a predicate is true.
         \hline
         P(x) & Q(x) & $\forall x \in \mathbb{N} : P(x)$ & $\forall x \in \mathbb{N} : Q(x)$ \\
         \hline
-        T    & T    & T                                  & T                                \\
+        T    & T    & T                                 & T                                 \\
         \hline
-        T    & F    & F                                  & F                                \\
+        T    & F    & F                                 & F                                 \\
         \hline
-        F    & T    & F                                  & T                                \\
+        F    & T    & F                                 & T                                 \\
         \hline
-        F    & F    & F                                  & F                                \\
+        F    & F    & F                                 & F                                 \\
         \hline
     \end{tabular}
 \end{align*}
@@ -865,13 +865,13 @@ Quantifiers are used to express the extent to which a predicate is true.
         \hline
         P(x) & Q(x) & $\exists x \in \mathbb{N} : P(x)$ & $\exists x \in \mathbb{N} : Q(x)$ \\
         \hline
-        T    & T    & T                                  & T                                \\
+        T    & T    & T                                 & T                                 \\
         \hline
-        T    & F    & T                                  & F                                \\
+        T    & F    & T                                 & F                                 \\
         \hline
-        F    & T    & T                                  & T                                \\
+        F    & T    & T                                 & T                                 \\
         \hline
-        F    & F    & F                                  & F                                \\
+        F    & F    & F                                 & F                                 \\
         \hline
     \end{tabular}
 \end{align*}
@@ -1138,7 +1138,7 @@ The product rule states that the number of ways to perform a sequence of k tasks
 EXTENDED PRODUCT RULE: The number of ways to perform a sequence of k tasks, where the first task can be performed in n1 ways, the second task can be performed in n2 ways, and so on, and the kth task can be performed in nk ways, is n1 $\times$ n2 $\times$ ... $\times$ nk.
 
 \begin{align*}
-    \text{Let } n_1, n_2, n_3, ..., n_k \in \mathbb{N} \\
+    \text{Let } n_1, n_2, n_3, ..., n_k \in \mathbb{N}             \\
     \text{The number of ways to perform a sequence of k tasks is:} \\
     n_1 \times n_2 \times n_3 \times ... \times n_k
 \end{align*}
@@ -1149,7 +1149,7 @@ The sum rule states that the number of ways to perform a task is the sum of the 
 
 \begin{align*}
     \text{Let } n_1, n_2, n_3, ..., n_k \in \mathbb{N} \\
-    \text{The number of ways to perform a task is:} \\
+    \text{The number of ways to perform a task is:}    \\
     n_1 + n_2 + n_3 + ... + n_k
 \end{align*}
 
@@ -1159,7 +1159,7 @@ A permutation is an ordered arrangement of objects.
 
 \begin{align*}
     \text{Let } n \in \mathbb{N} \text{ and } k \in \mathbb{N} \text{ where } k \leq n \\
-    \text{The number of permutations of n objects taken k at a time is:}                 \\
+    \text{The number of permutations of n objects taken k at a time is:}               \\
     P(n, k) = \frac{n!}{(n - k)!}
 \end{align*}
 
@@ -1169,7 +1169,7 @@ A combination is an unordered selection of objects.
 
 \begin{align*}
     \text{Let } n \in \mathbb{N} \text{ and } k \in \mathbb{N} \text{ where } k \leq n \\
-    \text{The number of combinations of n objects taken k at a time is:}                 \\
+    \text{The number of combinations of n objects taken k at a time is:}               \\
     C(n, k) = \frac{n!}{k!(n - k)!}
 \end{align*}
 
@@ -1260,7 +1260,7 @@ The variance of a random variable X is the expected value of the squared differe
 
 \begin{align*}
     \text{Let } X \text{ be a random variable} \\
-    \sigma_X = 
+    \sigma_X =
 \end{align*}
 
 \subsubsection{Standard deviation}
@@ -1271,7 +1271,7 @@ here is the formula for standard deviation:
 
 \begin{align*}
     \text{Standard deviation} = \sqrt{\text{Variance}} \\
-    \text{Or more formally:} \\
+    \text{Or more formally:}                           \\
     \sigma = \sqrt{Var(X)}
 \end{align*}
 
@@ -1298,7 +1298,7 @@ The binomial distribution is the probability distribution of the number of succe
 
 \begin{outline}
     \1 A group of animals consists of m cats and m dogs. How many ways are there to arrange the animals in a line if cats must alternate with dogs?
-        \2 $2(m!)^2$ because: The line can either start with a cat or with a dog, giving two possibilities. \\
+    \2 $2(m!)^2$ because: The line can either start with a cat or with a dog, giving two possibilities. \\
     Once this is fixed, the cats can be permuted arbitrary, giving $ m! $ possibilities, and the the dogs can be permuted arbitrary, giving $ m! $ possibilities as well. Overall, there are $2(m!)^2$ possibilities.
     \1 Below, you will see some specific types of logical statements. \\
     Sort them according to the following order: \\
