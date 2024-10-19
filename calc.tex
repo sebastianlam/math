@@ -1,74 +1,100 @@
-\documentclass{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{bm}
-\usepackage{mathtools}
-\usepackage{physics}
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,bm,mathtools,physics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
 
+\colorlet{sectioncolor}{blue!70!black}
+\colorlet{subsectioncolor}{blue!50!black}
 
-\title{Calculus Notes}
-\author{Your Name}
+\titleformat{\section}
+{\color{sectioncolor}\normalfont\Large\bfseries}
+{\color{sectioncolor}\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{subsectioncolor}\normalfont\large\bfseries}
+{\color{subsectioncolor}\thesubsection}{1em}{}
+
+\newcommand{\eqnote}[1]{\textcolor{gray}{\textrm{#1}}}
+
+\title{\textcolor{blue!70!black}{\Huge\textbf{Advanced Calculus Notes}}}
+\author{\Large Your Name}
+\date{}
 
 \begin{document}
 
 \maketitle
 
 \section{Introduction}
-Hello, this is a sample document for the calculus notes. This document is created using \LaTeX.
+Welcome to these comprehensive calculus notes. This document is created using \LaTeX, showcasing its power in typesetting mathematical content.
 
+\section{Fundamental Concepts}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Key Formulas]
 \begin{flalign*}
-     & \textrm{Differentiation from first principles:}                                                   \\
-     & \quad f'(x)                                     & = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} &  & \\
-     & \dv{x}\sin(x)                                   & = \cos(x)                                  &  & \\
-     & \dv{x}\cos(x)                                   & = -\sin(x)                                 &  & \\
-     & -\dv{x}\sin(x)                                  & = -\cos(x)                                 &  & \\
-     & -\dv{x}\cos(x)                                  & = \sin(x)                                  &  & \\
-     & \dv{x}e^x                                       & = e^x                                      &  & \\
-     & \dv{x}\ln x                                     & = \frac{1}{x}                              &  & \\
-     & \dv{x}\tan(kx)                                  & = k\sec^2(kx)                              &  & \\
-     & \dv{x}\sec(kx)                                  & = k\sec(kx)\tan(kx)                        &  & \\
-     & \dv{x}\cot(kx)                                  & = -k\csc^2(kx)                             &  & \\
-     & \dv{x}\csc(kx)                                  & = -k\csc(kx)\cot(kx)                       &  & \\
-     & \dv{x}f(g(x))                                   & = \dv{x} g(x) \cdot \dv{x}f(x)             &  & \\
-     & \dv{x}f(u) \cdot f(v)                           & = u \dv{v}{x} + v \dv{u}{x}                &  & \\
-     & \dv{x}\frac{f(u)}{f(v)}                         & = \frac{v \dv{u}{x} - u \dv{v}{x}}{v^2}    &  & \\
+    & \textbf{Differentiation from first principles:} &&&\\
+    & \quad f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} &&&\\
+    & \eqnote{(The foundation of differential calculus)} &&&\\[1em]
+    & \dv{x}\sin(x) = \cos(x) \quad \eqnote{(Sine derivative)} &&&\\
+    & \dv{x}\cos(x) = -\sin(x) \quad \eqnote{(Cosine derivative)} &&&\\
+    & \dv{x}e^x = e^x \quad \eqnote{(Exponential function derivative)} &&&\\
+    & \dv{x}\ln x = \frac{1}{x} \quad \eqnote{(Natural logarithm derivative)} &&&\\
+    & \dv{x}\tan(kx) = k\sec^2(kx) \quad \eqnote{(Tangent derivative)} &&&\\
+    & \dv{x}\sec(kx) = k\sec(kx)\tan(kx) \quad \eqnote{(Secant derivative)} &&&\\
+    & \dv{x}\cot(kx) = -k\csc^2(kx) \quad \eqnote{(Cotangent derivative)} &&&\\
+    & \dv{x}\csc(kx) = -k\csc(kx)\cot(kx) \quad \eqnote{(Cosecant derivative)} &&&\\
 \end{flalign*}
+\end{tcolorbox}
 
-JK just examples.
+\section{Advanced Differentiation Rules}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Chain Rule and Product Rule]
+\begin{flalign*}
+    & \textbf{Chain Rule:} &&&\\
+    & \quad \dv{x}f(g(x)) = \dv{g}{x} \cdot \dv{f}{g} &&&\\
+    & \eqnote{(Differentiating composite functions)} &&&\\[1em]
+    & \textbf{Product Rule:} &&&\\
+    & \quad \dv{x}[f(x) \cdot g(x)] = f(x) \dv{g}{x} + g(x) \dv{f}{x} &&&\\
+    & \eqnote{(Differentiating the product of two functions)} &&&\\[1em]
+    & \textbf{Quotient Rule:} &&&\\
+    & \quad \dv{x}\frac{f(x)}{g(x)} = \frac{g(x) \dv{f}{x} - f(x) \dv{g}{x}}{[g(x)]^2} &&&\\
+    & \eqnote{(Differentiating the quotient of two functions)} &&&
+\end{flalign*}
+\end{tcolorbox}
 
 \section{Limits}
-
-% Your content goes here
-
-\section{Derivatives}
-
-% Your content goes here
+Limits form the foundation of calculus, describing the behavior of functions as they approach certain values.
 
 \section{Integrals}
-
-% Your content goes here
+Integration is the reverse process of differentiation, used to find areas, volumes, and solutions to differential equations.
 
 \section{Multivariable Calculus}
-% Your content goes heree
+Extending calculus concepts to functions of multiple variables.
 
 \subsection{Partial Derivatives}
-% Your content goes here
+Derivatives with respect to one variable while holding others constant.
+
 \subsection{Gradient}
-% Your content goes here
+The vector of partial derivatives, representing the direction of steepest ascent.
+
 \subsection{Divergence and Curl}
-% Your content goes here
-\subsection{Double and Triple Integrals}
-% Your content goes here
-\subsection{Line Integrals}
-% Your content goes here
-\subsection{Surface Integrals}
-% Your content goes here
-\subsection{Green's Theoremmm}
-% Your content goes here
-\subsection{Stokes' Theorem}
-% Your content goes here
-\subsection{Divergence Theorem}
-% Your content goes here
+Measures of a vector field's expansion and rotation.
+
+\subsection{Multiple Integrals}
+Integrating over regions in multiple dimensions.
+
+\subsection{Vector Calculus Theorems}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Important Theorems]
+\begin{itemize}
+    \item \textbf{Green's Theorem:} Relates line integrals to double integrals.
+    \item \textbf{Stokes' Theorem:} Generalizes Green's Theorem to 3D.
+    \item \textbf{Divergence Theorem:} Relates surface integrals to triple integrals.
+\end{itemize}
+\end{tcolorbox}
 
 \end{document}
